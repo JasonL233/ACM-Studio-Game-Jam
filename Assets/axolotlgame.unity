@@ -216,7 +216,7 @@ Transform:
   m_GameObject: {fileID: 546831885}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.12696068, y: -2.53, z: 0}
+  m_LocalPosition: {x: -2.51, y: 0.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -509,7 +509,7 @@ Transform:
   m_GameObject: {fileID: 1549642722}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.12696068, y: -0.552456, z: 0}
+  m_LocalPosition: {x: 3.3, y: -0.552456, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -528,6 +528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 4
+  border: 22
 --- !u!61 &1549642727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -585,7 +586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07012e43f0de59f47b719c92f7fab9c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dmg: 0
+  dmg: 2
   axolotlHealth: {fileID: 546831892}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
