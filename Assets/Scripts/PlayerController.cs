@@ -16,6 +16,32 @@ public class NewBehaviourScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    private void Start()
+    {
+        int hp = 100;
+    }
+
+    public class Player
+    {
+        int dmg = 3;
+
+        // void OnTriggerEnter(Collider other)
+        // {
+        //     Debug.Log("MADE IT IN");
+        //     if (other.CompareTag("Axolotl"))
+        //     {
+        //         Axolotl axolotl = other.GetComponent<Axolotl>();
+        //         Debug.Log("GOT HERE");
+        //         if (axolotl != null)
+        //         {
+        //             axolotl.takeDamage(dmg);
+        //             Debug.Log("CALLED TAKEDAMAGE");
+        //         }
+        //     }
+        // }
+
+    }
+
     private void OnEnable()
     {
         playerControls.Enable();
