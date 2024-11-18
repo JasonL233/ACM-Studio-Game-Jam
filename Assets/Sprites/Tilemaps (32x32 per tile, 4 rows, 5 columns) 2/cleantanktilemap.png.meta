@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bd6718187877743b69ddc64cec599a52
+guid: 90ce30198ab8740748b9945e02217cef
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dirtytanktilemap_0
+      name: cleantanktilemap_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7ec1e9bebb4f45c4b093a508e287b60
-      internalID: -1717444812
+      spriteID: 64c31a1e933cb4c4d94c07d98afe61cc
+      internalID: 1892558070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_1
+      name: cleantanktilemap_1
       rect:
         serializedVersion: 2
         x: 32
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce38a9b32885148af9ea6841e8ab2945
-      internalID: -1776073301
+      spriteID: c3f63a47f41aa4d8987409fe66262d81
+      internalID: -1803713552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_2
+      name: cleantanktilemap_2
       rect:
         serializedVersion: 2
         x: 64
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39e30b920c8b34067b8f415358d9b92c
-      internalID: -1181665975
+      spriteID: 8251caf1e79ea4c049a440a85d27448e
+      internalID: -1284585289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_3
+      name: cleantanktilemap_3
       rect:
         serializedVersion: 2
         x: 96
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9ddf7edd21164df7a328225cb14a503
-      internalID: 1291262389
+      spriteID: d33d2ca2781af4ae89fb3cdfb9df117a
+      internalID: -2145662435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_4
+      name: cleantanktilemap_4
       rect:
         serializedVersion: 2
         x: 128
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8d8cd60de28841edae1cfbdb613c9d4
-      internalID: -1776473618
+      spriteID: 9d78bf5ee5ca441349b7806131db1911
+      internalID: -2075828452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_5
+      name: cleantanktilemap_5
       rect:
         serializedVersion: 2
         x: 0
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 556608c744228417f883d4269f7e3181
-      internalID: -1967438593
+      spriteID: d936f70e7dbf14e8ca40032aea55206b
+      internalID: 549590684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_6
+      name: cleantanktilemap_6
       rect:
         serializedVersion: 2
         x: 32
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3188dd0c5de74170a397eda103828d2
-      internalID: -1504901722
+      spriteID: d26437650320b4dee88eac6f2c65c1f3
+      internalID: 988332781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_7
+      name: cleantanktilemap_7
       rect:
         serializedVersion: 2
         x: 64
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e254d0f02700447fb440d4efc4633fb
-      internalID: -1410572399
+      spriteID: 3c430df1f465e446aa926b8bcac46630
+      internalID: -1660954986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_8
+      name: cleantanktilemap_8
       rect:
         serializedVersion: 2
         x: 96
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db27ce9287a5b42119bb3cc85757147e
-      internalID: 452798393
+      spriteID: 6e94d1ef518aa4632a2006ec4e6ab724
+      internalID: -133801251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_9
+      name: cleantanktilemap_9
       rect:
         serializedVersion: 2
         x: 128
@@ -300,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f87288fd41f62478f8f9737ea6b3fca1
-      internalID: 1177880574
+      spriteID: 1721005459c8644e692620e385298086
+      internalID: 368356318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_10
+      name: cleantanktilemap_10
       rect:
         serializedVersion: 2
         x: 0
@@ -321,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cb9748724fa2472d980f4aa510c02ad
-      internalID: 232859342
+      spriteID: 2229e6c0f2634470f8a8d3952fe0b53e
+      internalID: 66787572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_11
+      name: cleantanktilemap_11
       rect:
         serializedVersion: 2
         x: 32
@@ -342,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b646853901cfc49429a2a114f2637917
-      internalID: -2072707902
+      spriteID: 2e26be81c68fb4f7caa6f3110e981c63
+      internalID: 2086573546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_12
+      name: cleantanktilemap_12
       rect:
         serializedVersion: 2
         x: 64
@@ -363,14 +363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1485e74f0429e4d9884345f6da51c1db
-      internalID: -1118383488
+      spriteID: 0cce5793887b044b8a2188409403e1bb
+      internalID: -199033015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_13
+      name: cleantanktilemap_13
       rect:
         serializedVersion: 2
         x: 96
@@ -384,14 +384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eeb65077053c14b1aa5f9027749ddc76
-      internalID: -463496045
+      spriteID: 72e49d9cf50504a0c82981fe58b7cdcf
+      internalID: -2143865603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_14
+      name: cleantanktilemap_14
       rect:
         serializedVersion: 2
         x: 128
@@ -405,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6551846d44b4c433db50e2d052d59f0e
-      internalID: 301390726
+      spriteID: 11a4d3bb3a765473a87447fdf6f920b0
+      internalID: -246926061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirtytanktilemap_15
+      name: cleantanktilemap_15
       rect:
         serializedVersion: 2
         x: 0
@@ -426,50 +426,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a97b0315131842b0869647dfd378c1b
-      internalID: 1754419039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dirtytanktilemap_16
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5310f2bc784544f15bb0dc3288a5cb15
-      internalID: 1804684039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dirtytanktilemap_17
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5f98c211f66b436d9e0f91c6610440b
-      internalID: -1886527950
+      spriteID: d2f58c52a292448d39ba5a7c33309c60
+      internalID: 1480057015
       vertices: []
       indices: 
       edges: []
@@ -485,24 +443,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dirtytanktilemap_0: -1717444812
-      dirtytanktilemap_1: -1776073301
-      dirtytanktilemap_10: 232859342
-      dirtytanktilemap_11: -2072707902
-      dirtytanktilemap_12: -1118383488
-      dirtytanktilemap_13: -463496045
-      dirtytanktilemap_14: 301390726
-      dirtytanktilemap_15: 1754419039
-      dirtytanktilemap_16: 1804684039
-      dirtytanktilemap_17: -1886527950
-      dirtytanktilemap_2: -1181665975
-      dirtytanktilemap_3: 1291262389
-      dirtytanktilemap_4: -1776473618
-      dirtytanktilemap_5: -1967438593
-      dirtytanktilemap_6: -1504901722
-      dirtytanktilemap_7: -1410572399
-      dirtytanktilemap_8: 452798393
-      dirtytanktilemap_9: 1177880574
+      cleantanktilemap_0: 1892558070
+      cleantanktilemap_1: -1803713552
+      cleantanktilemap_10: 66787572
+      cleantanktilemap_11: 2086573546
+      cleantanktilemap_12: -199033015
+      cleantanktilemap_13: -2143865603
+      cleantanktilemap_14: -246926061
+      cleantanktilemap_15: 1480057015
+      cleantanktilemap_2: -1284585289
+      cleantanktilemap_3: -2145662435
+      cleantanktilemap_4: -2075828452
+      cleantanktilemap_5: 549590684
+      cleantanktilemap_6: 988332781
+      cleantanktilemap_7: -1660954986
+      cleantanktilemap_8: -133801251
+      cleantanktilemap_9: 368356318
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
