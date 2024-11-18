@@ -3,21 +3,19 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class HealthSystem : MonoBehaviour
+public class AxolotlHealth : MonoBehaviour
 {
     public HealthManager healthManager;
 
     private Rigidbody2D rb;
-    private int maxHealth = 10;
-    private int currHealth;
+    public int maxHealth = 100;
+    public int currHealth;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
         currHealth = maxHealth;
-        Debug.Log("Start health: " + currHealth);
     }
 
     public void takeDamage(int damage)
@@ -31,6 +29,7 @@ public class HealthSystem : MonoBehaviour
 
         if (currHealth <= 0)
         {
+            Destroy(gameObject);
             die();
         }
 
