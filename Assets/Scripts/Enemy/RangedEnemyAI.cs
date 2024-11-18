@@ -86,4 +86,9 @@ public class AIChaseAndRangedAttack : MonoBehaviour
         }
     }
 
+    public void takeDamage()
+    {
+        Destroy(gameObject);
+    }
+
 }

@@ -39,6 +39,10 @@ public class Bullet : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        else if (collision.gameObject)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

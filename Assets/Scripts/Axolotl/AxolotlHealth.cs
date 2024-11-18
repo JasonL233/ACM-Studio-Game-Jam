@@ -25,6 +25,7 @@ public class AxolotlHealth : MonoBehaviour
         if (healthManager != null)
         {
             healthManager.lossHealth(damage);
+            Debug.Log("function called!");
         }
 
         if (currHealth <= 0)
@@ -32,8 +33,6 @@ public class AxolotlHealth : MonoBehaviour
             Destroy(gameObject);
             die();
         }
-
-        Debug.Log("Current health: " + currHealth);
     }
 
     private void die()

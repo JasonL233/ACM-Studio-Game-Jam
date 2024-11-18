@@ -61,4 +61,9 @@ public class AIChase : MonoBehaviour
             }
         }
     }
+
+    public void takeDamage()
+    {
+        Destroy(gameObject);
+    }
 }

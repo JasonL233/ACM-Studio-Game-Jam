@@ -5,13 +5,23 @@ using UnityEngine;
 public class PlayerDamage : MonoBehaviour
 {
     public int dmg;
-    public AxolotlHealth axolotlHealth;
+    public AIChase meleeEnemy;
+    public AIChaseAndRangedAttack rangedEnemy;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.GetComponent<Axolotl>().tag == "Axolotl")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            // axolotlHealth.takeDamage(dmg);
+            meleeEnemy = collision.gameObject.GetComponent<AIChase>();
+            rangedEnemy = collision.gameObject.GetComponent<AIChaseAndRangedAttack>();
+            if (meleeEnemy)
+            {
+                meleeEnemy.takeDamage();
+            }
+            else
+            {
+                rangedEnemy.takeDamage();
+            }
         }
     }
 }
