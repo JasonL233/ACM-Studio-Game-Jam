@@ -6,7 +6,7 @@ public class AIChase : MonoBehaviour
 {
     public Transform player;
     public float speed;
-    public int damage = 10;
+    public int damage = 3;
 
     private Rigidbody2D rb;
 
@@ -38,25 +38,27 @@ public class AIChase : MonoBehaviour
 
     private void GetTarget()
     {
-        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Axolotl");
         if (playerObject != null)
         {
             player = playerObject.transform;
-            Debug.Log("Player assigned: " + player.name);
+            // Debug.Log("Player assigned: " + player.name);
         }
         else
         {
-            Debug.LogWarning("Player not found!");
+            // Debug.LogWarning("Player not found!");
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Axolotl"))
         {
-            Debug.Log("Player hit!");
-            // Uncomment this if a PlayerHealth script is available
-            // player.GetComponent<PlayerHealth>().TakeDamage(damage);
+            HealthSystem axolotlHealth = collision.gameObject.GetComponent<HealthSystem>();
+            if (axolotlHealth != null)
+            {
+                axolotlHealth.takeDamage(damage);
+            }
         }
     }
 }

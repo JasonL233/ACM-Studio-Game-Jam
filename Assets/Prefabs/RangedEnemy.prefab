@@ -174,7 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   bulletPrefab: {fileID: 400089095851813266, guid: c6c4fc4e892cd431ba847efc67ab2659, type: 3}
-  speed: 3
+  speed: 2
   shootingRange: 5
   FiringPoint: {fileID: 4544843737287164422}
   fireRate: 0.5

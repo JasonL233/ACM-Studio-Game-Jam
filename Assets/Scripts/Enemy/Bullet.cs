@@ -11,6 +11,8 @@ public class Bullet : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    public int damage = 2;
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,4 +26,19 @@ public class Bullet : MonoBehaviour
     {
         rb.velocity = transform.up * speed;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Axolotl"))
+        {
+            Debug.Log("BULLET HITTTTTT");
+            HealthSystem axolotlHealth = collision.gameObject.GetComponent<HealthSystem>();
+            if (axolotlHealth != null)
+            {
+                axolotlHealth.takeDamage(damage);
+                Destroy(gameObject);
+            }
+        }
+    }
+
 }

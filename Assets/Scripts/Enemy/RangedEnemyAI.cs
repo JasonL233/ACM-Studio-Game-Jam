@@ -10,7 +10,6 @@ public class AIChaseAndRangedAttack : MonoBehaviour
     public float shootingRange; // Range within which the enemy shoots
     public Transform FiringPoint;
     public float fireRate;
-    public int damage = 10; // Damage dealt to the player on collision (optional)
 
 
     private Rigidbody2D rb;
@@ -70,31 +69,21 @@ public class AIChaseAndRangedAttack : MonoBehaviour
         {
             timeToFire -= Time.deltaTime;
         }
-        Debug.Log("Shooting at player!");
+        // Debug.Log("Shooting at player!");
     }
 
     private void GetTarget()
     {
-        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Axolotl");
         if (playerObject != null)
         {
             player = playerObject.transform;
-            Debug.Log("Player assigned: " + player.name);
+            // Debug.Log("Player assigned: " + player.name);
         }
         else
         {
-            Debug.LogWarning("Player not found!");
+            // Debug.LogWarning("Player not found!");
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Damage the player if the enemy collides with them
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("Enemy collided with player!");
-            // Uncomment when PlayerHealth script is implemented
-            // player.GetComponent<PlayerHealth>().TakeDamage(damage);
-        }
-    }
 }
