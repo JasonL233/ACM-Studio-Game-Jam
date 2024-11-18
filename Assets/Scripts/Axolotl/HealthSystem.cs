@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
 {
+    public HealthManager healthManager;
+
     private Rigidbody2D rb;
     private int maxHealth = 10;
     private int currHealth;
@@ -21,6 +23,11 @@ public class HealthSystem : MonoBehaviour
     public void takeDamage(int damage)
     {
         currHealth -= damage;
+
+        if (healthManager != null)
+        {
+            healthManager.lossHealth(damage);
+        }
 
         if (currHealth <= 0)
         {
