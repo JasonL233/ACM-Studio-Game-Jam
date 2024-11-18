@@ -9,9 +9,9 @@ public class PlayerDamage : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Axolotl")
+        if (collision.gameObject.GetComponent<Axolotl>().tag == "Axolotl")
         {
-            axolotlHealth.takeDamage(dmg);
+            // axolotlHealth.takeDamage(dmg);
         }
     }
 }
