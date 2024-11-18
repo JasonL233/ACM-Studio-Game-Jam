@@ -32,7 +32,7 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Axolotl"))
         {
             Debug.Log("BULLET HITTTTTT");
-            HealthSystem axolotlHealth = collision.gameObject.GetComponent<HealthSystem>();
+            AxolotlHealth axolotlHealth = collision.gameObject.GetComponent<AxolotlHealth>();
             if (axolotlHealth != null)
             {
                 axolotlHealth.takeDamage(damage);

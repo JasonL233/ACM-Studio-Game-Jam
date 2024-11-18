@@ -6,7 +6,7 @@ using UnityEngine;
 public class HealthSystem : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private int maxHealth = 10;
+    private int maxHealth = 100;
     private int currHealth;
 
     // Start is called before the first frame update
@@ -24,6 +24,7 @@ public class HealthSystem : MonoBehaviour
 
         if (currHealth <= 0)
         {
+            Destroy(gameObject);
             die();
         }
 
