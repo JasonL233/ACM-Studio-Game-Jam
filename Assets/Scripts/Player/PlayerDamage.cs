@@ -12,16 +12,8 @@ public class PlayerDamage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            meleeEnemy = collision.gameObject.GetComponent<AIChase>();
-            rangedEnemy = collision.gameObject.GetComponent<AIChaseAndRangedAttack>();
-            if (meleeEnemy)
-            {
-                meleeEnemy.takeDamage();
-            }
-            else
-            {
-                rangedEnemy.takeDamage();
-            }
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            enemy.takeDamage(dmg);
         }
     }
 }

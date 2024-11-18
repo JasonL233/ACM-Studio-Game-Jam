@@ -2,27 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIChaseAndRangedAttack : MonoBehaviour
+public class AIChaseAndRangedAttack : Enemy
 {
-    public Transform player; // Reference to the player
     public GameObject bulletPrefab;
-    public float speed; // Speed of movement
     public float shootingRange; // Range within which the enemy shoots
     public Transform FiringPoint;
     public float fireRate;
-
-
-    private Rigidbody2D rb;
     private float distanceToPlayer; // Distance to the player
     private float timeToFire;
-
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-
-        // Automatically find the player if not assigned in Inspector
-        GetTarget();
-    }
 
     void Update()
     {
@@ -52,12 +39,6 @@ public class AIChaseAndRangedAttack : MonoBehaviour
         }
     }
 
-    void MoveTowardPlayer()
-    {
-        // Move toward the player's position
-        transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
-    }
-
     void ShootAtPlayer()
     {
         if (timeToFire <= 0f)
@@ -69,26 +50,5 @@ public class AIChaseAndRangedAttack : MonoBehaviour
         {
             timeToFire -= Time.deltaTime;
         }
-        // Debug.Log("Shooting at player!");
     }
-
-    private void GetTarget()
-    {
-        GameObject playerObject = GameObject.FindGameObjectWithTag("Axolotl");
-        if (playerObject != null)
-        {
-            player = playerObject.transform;
-            // Debug.Log("Player assigned: " + player.name);
-        }
-        else
-        {
-            // Debug.LogWarning("Player not found!");
-        }
-    }
-
-    public void takeDamage()
-    {
-        Destroy(gameObject);
-    }
-
 }

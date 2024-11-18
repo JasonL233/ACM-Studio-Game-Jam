@@ -3,46 +3,23 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class AxolotlHealth : MonoBehaviour
+public class AxolotlHealth : Actors
 {
     public HealthManager healthManager;
 
-    private Rigidbody2D rb;
-    public int maxHealth = 100;
-    public int currHealth;
-
-    // Start is called before the first frame update
-    void Start()
+    public void takeDamage(int dmg)
     {
-        rb = GetComponent<Rigidbody2D>();
-        currHealth = maxHealth;
-    }
-
-    public void takeDamage(int damage)
-    {
-        currHealth -= damage;
+        base.takeDamage(dmg);
 
         if (healthManager != null)
         {
-            healthManager.lossHealth(damage);
-            Debug.Log("function called!");
-        }
-
-        if (currHealth <= 0)
-        {
-            Destroy(gameObject);
-            die();
+            healthManager.lossHealth(dmg);
         }
     }
 
-    private void die()
+    public void Die()
     {
-        Debug.Log("Axolotl has died! Restarting scene...");
+        base.Die();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    public int getHealth()
-    {
-        return currHealth;
     }
 }

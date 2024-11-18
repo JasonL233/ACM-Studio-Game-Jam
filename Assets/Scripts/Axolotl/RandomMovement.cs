@@ -42,7 +42,5 @@ public class RandomPatrol : MonoBehaviour
             Random.Range(Mathf.Max(centrePoint.x - patrolRangeX, -screenBounds.x), Mathf.Min(centrePoint.x + patrolRangeX, screenBounds.x)),
             Random.Range(Mathf.Max(centrePoint.y - patrolRangeY, -screenBounds.y), Mathf.Min(centrePoint.y + patrolRangeY, screenBounds.y))
         );
-
-        // Debug.Log("New Target Position: " + targetPosition);
     }
 }

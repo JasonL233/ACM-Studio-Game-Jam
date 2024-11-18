@@ -31,7 +31,6 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Axolotl"))
         {
-            Debug.Log("BULLET HITTTTTT");
             AxolotlHealth axolotlHealth = collision.gameObject.GetComponent<AxolotlHealth>();
             if (axolotlHealth != null)
             {
@@ -44,5 +43,4 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 }
