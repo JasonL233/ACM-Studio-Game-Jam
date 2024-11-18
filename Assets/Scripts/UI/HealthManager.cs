@@ -11,9 +11,9 @@ public class HealthManager : MonoBehaviour
 
 
     // Update is called once per frame
-    public void lossHealth (int damage)
+    public void lossHealth(int damage)
     {
-        healthAmount -= (damage*10);
+        healthAmount -= (damage);
         healthBar.fillAmount = healthAmount / 100f;
     }
 }
