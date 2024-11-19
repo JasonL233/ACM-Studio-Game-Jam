@@ -5,13 +5,15 @@ using UnityEngine;
 public class PlayerDamage : MonoBehaviour
 {
     public int dmg;
-    public AxolotlHealth axolotlHealth;
+    public AIChase meleeEnemy;
+    public AIChaseAndRangedAttack rangedEnemy;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Axolotl")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            axolotlHealth.takeDamage(dmg);
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            enemy.takeDamage(dmg);
         }
     }
 }
