@@ -126,12 +126,10 @@ public class PlayerMovement : MonoBehaviour
         if (movement.x > 0 && render.flipX)
         {
             render.flipX = false;
-            Debug.Log("Flip right");
         }
-        else if (movement.x < 180 && !render.flipX)
+        else if (movement.x < 0 && !render.flipX)
         {
             render.flipX = true;
-            Debug.Log("Flip left");
         }
     }
 }
