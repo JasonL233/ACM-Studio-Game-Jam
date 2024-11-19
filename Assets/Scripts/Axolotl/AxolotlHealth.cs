@@ -20,6 +20,7 @@ public class AxolotlHealth : Actors
     public void Die()
     {
         base.Die();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("Game over! You lose :(");
     }
 }

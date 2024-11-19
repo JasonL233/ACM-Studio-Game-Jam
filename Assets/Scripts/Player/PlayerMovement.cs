@@ -12,12 +12,14 @@ public class PlayerMovement : MonoBehaviour
     private Camera cam;
     private Animator animator;
     private SpriteRenderer render;
+    private PlayerDamage dmg;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         playerControls = new PlayerControls();
         cam = Camera.main;
+        dmg = GetComponent<PlayerDamage>();
     }
 
     private void Start()
@@ -57,21 +59,51 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * (moveSpeed * Time.fixedDeltaTime));
         if (movement.x > 0)
         {
-            isFlipped();
-            animator.Play("right");
+            if (dmg.isColliding())
+            {
+                isFlipped();
+                animator.Play("rightA");
+            }
+            else
+            {
+                isFlipped();
+                animator.Play("right");
+            }
         }
         else if (movement.x < 0)
         {
-            isFlipped();
-            animator.Play("right");
+            if (dmg.isColliding())
+            {
+                isFlipped();
+                animator.Play("rightA");
+            }
+            else
+            {
+                isFlipped();
+                animator.Play("right");
+            }
         }
         else if (movement.y > 0 && movement.x == 0)
         {
-            animator.Play("up");
+            if (dmg.isColliding())
+            {
+                animator.Play("upA");
+            }
+            else
+            {
+                animator.Play("up");
+            }
         }
         else if (movement.y < 0 && movement.x == 0)
         {
-            animator.Play("down");
+            if (dmg.isColliding())
+            {
+                animator.Play("downA");
+            }
+            else
+            {
+                animator.Play("down");
+            }
         }
     }
 
