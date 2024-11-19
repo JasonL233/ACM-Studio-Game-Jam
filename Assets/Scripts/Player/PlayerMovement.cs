@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
     private Rigidbody2D rb;
     private Camera cam;
+    private Animator animator;
+    private SpriteRenderer render;
 
     private void Awake()
     {
@@ -20,7 +22,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-
+        animator = GetComponent<Animator>();
+        render = GetComponent<SpriteRenderer>();
     }
 
     public class Player
@@ -52,6 +55,24 @@ public class PlayerMovement : MonoBehaviour
     {
         PlayerScreenCheck();
         rb.MovePosition(rb.position + movement * (moveSpeed * Time.fixedDeltaTime));
+        if (movement.x > 0)
+        {
+            isFlipped();
+            animator.Play("right");
+        }
+        else if (movement.x < 0)
+        {
+            isFlipped();
+            animator.Play("right");
+        }
+        else if (movement.y > 0 && movement.x == 0)
+        {
+            animator.Play("up");
+        }
+        else if (movement.y < 0 && movement.x == 0)
+        {
+            animator.Play("down");
+        }
     }
 
     private void PlayerScreenCheck()
@@ -65,6 +86,20 @@ public class PlayerMovement : MonoBehaviour
         if ((screenPos.y < border && movement.y < 0) || (screenPos.y > cam.pixelHeight - border && movement.y > 0))
         {
             movement = new Vector2(movement.x, 0);
+        }
+    }
+
+    void isFlipped()
+    {
+        if (movement.x > 0 && render.flipX)
+        {
+            render.flipX = false;
+            Debug.Log("Flip right");
+        }
+        else if (movement.x < 180 && !render.flipX)
+        {
+            render.flipX = true;
+            Debug.Log("Flip left");
         }
     }
 }
