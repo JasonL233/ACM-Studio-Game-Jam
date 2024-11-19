@@ -16114,6 +16114,8 @@ MonoBehaviour:
   dmg: 2
   meleeEnemy: {fileID: 0}
   rangedEnemy: {fileID: 0}
+  enemiesKilled: 0
+  isCollide: 0
 --- !u!95 &1549642729
 Animator:
   serializedVersion: 5
